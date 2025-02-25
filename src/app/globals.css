@@ -4,18 +4,24 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #272727;
+  --accent: #069751;
+  --accent-10: #0697511A;
+  --navbar-bg: #E3E3E3C9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #161616;
+    --foreground: #ebebeb;
+    --accent: #1CAC55;
+    --accent-10: #1CAC551A;
+    --navbar-bg: #242424DF;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
