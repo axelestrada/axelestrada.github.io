@@ -14,8 +14,6 @@ import {
   GitForkIcon,
   Home01Icon,
   Layers01Icon,
-  Layers02Icon,
-  LayersIcon,
   PaintBrush04Icon,
   SourceCodeIcon,
 } from "@hugeicons/core-free-icons";
@@ -25,7 +23,6 @@ import { NextjsIcon } from "@/icons/NextjsIcon";
 import { CssIcon } from "@/icons/CssIcon";
 import { JavascriptIcon } from "@/icons/JavascriptIcon";
 import { FirebaseIcon } from "@/icons/FirebaseIcon";
-import { SupabaseIcon } from "@/icons/SupabaseIcon";
 import { TypescriptIcon } from "@/icons/TypescriptIcon";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { GitlabIcon } from "@/icons/GitlabIcon";
