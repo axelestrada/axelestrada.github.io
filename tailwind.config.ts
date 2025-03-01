@@ -6,16 +6,25 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/icons/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "foreground-65": "var(--foreground-65)",
         accent: "var(--accent)",
         "accent-10": "var(--accent-10)",
         "navbar-bg": "var(--navbar-bg)",
+        pretext: "var(--pretext)",
       },
+      fontSize: {
+        "2.5xl": "1.75rem",
+      },
+      borderWidth: {
+        3: "3px",
+      }
     },
   },
   plugins: [],

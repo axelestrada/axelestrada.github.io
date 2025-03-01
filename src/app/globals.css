@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,18 +7,22 @@
 :root {
   --background: #ffffff;
   --foreground: #272727;
+  --foreground-65: #1e1e1ea5;
   --accent: #069751;
   --accent-10: #0697511A;
   --navbar-bg: #E3E3E3C9;
+  --pretext: #2c573e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #161616;
     --foreground: #ebebeb;
+    --foreground-65: #ffffffa5;
     --accent: #1CAC55;
     --accent-10: #1CAC551A;
     --navbar-bg: #242424DF;
+    --pretext: #b7ffe2cd;
   }
 }
 

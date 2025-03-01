@@ -23,8 +23,8 @@ const frygiaHeavy = localFont({
 
 export const Profile = () => {
   return (
-    <div className="w-full h-svh justify-center items-center flex flex-col relative overflow-hidden">
-      <div className="w-96 h-96 bg-accent absolute -top-36 -right-36 rounded-full -z-10 blur-[110px] opacity-40"></div>
+    <div className="w-full min-h-svh justify-center items-center flex flex-col relative overflow-hidden px-3">
+      <div className="w-96 h-96 bg-accent absolute -top-36 -right-36 rounded-full -z-10 blur-[110px] opacity-50"></div>
 
       <span className="text-2xl font-mono">
         <Typewriter
@@ -112,7 +112,7 @@ const LinkItem = ({
           onClick();
         }
       }}
-      className="text-accent cursor-pointer bg-accent-10 py-2 px-3 rounded-full flex flex-row items-center active:scale-105 hover:scale-105 transition-transform"
+      className="text-accent cursor-pointer bg-accent-10 py-2 px-3 rounded-full flex flex-row items-center hover:scale-105 transition-transform"
     >
       <HugeiconsIcon
         className="mr-1"
