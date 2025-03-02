@@ -8,6 +8,13 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/icons/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'border-b-3',
+    'border-r-3',
+    'border-l-3',
+    'border-t-3',
+    'col-span-2',
+  ],
   theme: {
     extend: {
       colors: {
