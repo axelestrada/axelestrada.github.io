@@ -92,7 +92,7 @@ interface LinkItemProps {
   download?: boolean;
 }
 
-const LinkItem = ({
+export const LinkItem = ({
   label,
   href = "#",
   leftIcon = Alert01Icon,

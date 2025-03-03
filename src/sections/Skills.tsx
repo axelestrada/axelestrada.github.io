@@ -127,7 +127,7 @@ export const Skills = () => {
         , y el software adicional que utilizo en mi trabajo diario.
       </p>
 
-      <div className="my-12 flex-row flex items-center gap-3">
+      <div className="mt-12 flex-row flex items-center gap-3">
       
         <div className="grid grid-cols-4 max-w-96 h-max w-full">
           {cellBorders.map((borderKeys, index) => {
