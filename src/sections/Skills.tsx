@@ -1,12 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useState } from "react";
 import { HugeiconsIcon, HugeiconsProps } from "@hugeicons/react";
 import {
   Home01Icon,
   PaintBrush04Icon,
   DatabaseIcon,
+  DatabaseIcon,
   SourceCodeIcon,
+  GitForkIcon,
+  Layers01Icon,
+  Alert01Icon,
   GitForkIcon,
   Layers01Icon,
   Alert01Icon,
@@ -138,6 +143,8 @@ export const Skills = () => {
               </Cell>
             );
           })}
+            );
+          })}
         </div>
 
         <Menu activeTab={activeTab} handleClick={setActiveTab} />
@@ -146,6 +153,10 @@ export const Skills = () => {
   );
 };
 
+const Cell = ({
+  className,
+  children,
+}: {
 const Cell = ({
   className,
   children,
@@ -159,7 +170,18 @@ const Cell = ({
     {children}
   </div>
 );
+}) => (
+  <div
+    className={`border-accent h-20 w-full flex justify-center items-center p-3 ${className}`}
+  >
+    {children}
+  </div>
+);
 
+const Menu = ({
+  activeTab,
+  handleClick,
+}: {
 const Menu = ({
   activeTab,
   handleClick,
@@ -176,8 +198,27 @@ const Menu = ({
     { icon: Layers01Icon, href: "tools" },
   ];
 
+}) => {
+  const menuItems = [
+    { icon: Home01Icon, href: "home" },
+    { icon: PaintBrush04Icon, href: "frontend" },
+    { icon: DatabaseIcon, href: "database" },
+    { icon: SourceCodeIcon, href: "languages" },
+    { icon: GitForkIcon, href: "version-control" },
+    { icon: Layers01Icon, href: "tools" },
+  ];
+
   return (
     <div className="bg-black dark:bg-white dark:bg-opacity-5 bg-opacity-10 p-1.5 rounded-full flex flex-col justify-center items-center">
+      {menuItems.map(({ icon, href }) => (
+        <MenuItem
+          key={href}
+          icon={icon}
+          href={href}
+          onClick={handleClick}
+          activeTab={activeTab}
+        />
+      ))}
       {menuItems.map(({ icon, href }) => (
         <MenuItem
           key={href}
@@ -203,10 +244,18 @@ const MenuItem = ({
   onClick: (tab: string) => void;
 }) => {
   const isActive = href === activeTab;
+}: {
+  icon: HugeiconsProps["icon"];
+  activeTab: string;
+  href: string;
+  onClick: (tab: string) => void;
+}) => {
+  const isActive = href === activeTab;
   return (
     <button
       onClick={() => onClick(href)}
       className={`my-2 bg-black dark:bg-white rounded-[10px] p-1 hover:bg-opacity-20 transition-colors ${
+        isActive
         isActive
           ? "bg-opacity-20 dark:bg-opacity-15"
           : "bg-opacity-0 dark:bg-opacity-0"
