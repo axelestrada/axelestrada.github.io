@@ -17,8 +17,8 @@ export const GithubCodespacesIcon = () => {
           gradientTransform="translate(.5 .592) scale(7.9375)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0196CA" />
-          <stop offset="1" stop-color="#0065A9" />
+          <stop offset="0" stopColor="#0196CA" />
+          <stop offset="1" stopColor="#0065A9" />
         </linearGradient>
         <linearGradient
           id="b"
@@ -29,8 +29,8 @@ export const GithubCodespacesIcon = () => {
           gradientTransform="translate(.5 .592) scale(7.9375)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#01A7DE" />
-          <stop offset="1" stop-color="#007ACC" />
+          <stop offset="0" stopColor="#01A7DE" />
+          <stop offset="1" stopColor="#007ACC" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -41,8 +41,8 @@ export const GithubCodespacesIcon = () => {
           gradientTransform="translate(.5 .592) scale(7.9375)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#2EC2F6" />
-          <stop offset="1" stop-color="#1F9CF0" />
+          <stop offset="0" stopColor="#2EC2F6" />
+          <stop offset="1" stopColor="#1F9CF0" />
         </linearGradient>
       </defs>
       <path

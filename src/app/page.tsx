@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { Profile } from "@/sections/Profile";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
+import { About } from "@/sections/About";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SectionDivider />
       <Skills />
       <SectionDivider />
+      <About />
     </div>
   );
 }

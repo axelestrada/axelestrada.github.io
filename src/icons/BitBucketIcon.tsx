@@ -13,8 +13,8 @@ export const BitBucketIcon = () => {
           y2="23.532"
           gradientTransform="scale(4)"
         >
-          <stop offset=".176" stop-color="#0052cc" />
-          <stop offset="1" stop-color="#2684ff" />
+          <stop offset=".176" stopColor="#0052cc" />
+          <stop offset="1" stopColor="#2684ff" />
         </linearGradient>
       </defs>
       <path

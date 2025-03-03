@@ -56,10 +56,10 @@ export const VsCodeIcon = () => {
           height="113.408"
           x="-8.41115"
           y="22.5944"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             result="hardAlpha"
@@ -85,10 +85,10 @@ export const VsCodeIcon = () => {
           height="144.007"
           x="79.6667"
           y="-8.0035"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             result="hardAlpha"
@@ -116,7 +116,7 @@ export const VsCodeIcon = () => {
           y2="127.67"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
+          <stop stopColor="#fff" />
           <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>

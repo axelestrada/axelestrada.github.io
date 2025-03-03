@@ -39,7 +39,7 @@ export const Profile = () => {
       </span>
 
       <h1
-        className={`text-[85px] text-center leading-[1.15] pt-3 ${frygiaHeavy.className}`}
+        className={`text-[85px] text-center text-accent leading-[1.15] pt-3 ${frygiaHeavy.className}`}
       >
         Axel Estrada.
       </h1>
