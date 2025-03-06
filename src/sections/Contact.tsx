@@ -16,7 +16,10 @@ const frygiaHeavy = localFont({
 
 export const Contact = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center px-3">
+    <section
+      id="contact"
+      className="pt-[20svh] w-full flex flex-col justify-center items-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto"
+    >
       <h3 className="text-3xl mb-2 text-center text-foreground-65 font-medium mx-6 leading-normal">
         ¿Por qué no hablamos?
       </h3>
@@ -27,18 +30,18 @@ export const Contact = () => {
         Contacta conmigo
       </h2>
 
-      <p className="text-center mx-6 leading-tight mb-4">
+      <p className="text-center mb-4 text-foreground-65">
         Gracias por visitar mi sitio web, espero que mi perfil como
         desarrollador te interese y podamos entrar en contacto. Puedes copiar mi
-        correo electrónico o descargar mi resumen en los botones de aquí abajo
-        para cualquier consulta.
+        correo electrónico o descargar mi curriculum en los botones de aquí
+        abajo para cualquier consulta.
       </p>
 
       <div className="flex flex-row flex-wrap justify-center gap-3">
         <LinkItem
           label="Descargar CV"
           leftIcon={Download04Icon}
-          href="/cv/cv.pdf"
+          href="/cv/AxelEstrada-CV.pdf"
           download
         />
         <LinkItem
@@ -50,6 +53,6 @@ export const Contact = () => {
           }}
         />
       </div>
-    </div>
+    </section>
   );
 };

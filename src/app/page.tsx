@@ -1,5 +1,3 @@
-import { SectionDivider } from "@/components/SectionDivider/SectionDivider";
-
 import { Navbar } from "@/components/Navbar/Navbar";
 import { Profile } from "@/sections/Profile";
 import { Projects } from "@/sections/Projects";
@@ -13,15 +11,10 @@ export default function Home() {
     <div className="w-full min-h-svh relative">
       <Navbar />
       <Profile />
-      <SectionDivider />
       <Projects />
-      <SectionDivider />
       <Skills />
-      <SectionDivider />
       <About />
-      <SectionDivider />
       <Contact />
-      <SectionDivider />
       <Footer />
     </div>
   );

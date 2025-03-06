@@ -38,6 +38,8 @@ import {
   StackOverflowIcon,
   MongoDBIcon,
 } from "@/icons";
+import { AngularIcon } from "@/icons/AngularIcon";
+import { BootstrapIcon } from "@/icons/BootstrapIcon";
 
 export const Skills = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -56,7 +58,7 @@ export const Skills = () => {
     "",
     "border-l-3",
     "border-l-3",
-    "border-l-3"
+    "border-l-3",
   ];
 
   const skillsMap: Record<string, { icon: React.FC; index: number }[]> = {
@@ -65,14 +67,16 @@ export const Skills = () => {
       { icon: ReactIcon, index: 5 },
       { icon: SassIcon, index: 6 },
       { icon: SQLIcon, index: 7 },
-      { icon: ReduxIcon, index: 8 },
+      { icon: AngularIcon, index: 8 },
       { icon: GitIcon, index: 9 },
     ],
     frontend: [
+      { icon: HtmlIcon, index: 1 },
+      { icon: BootstrapIcon, index: 2 },
       { icon: TailwindIcon, index: 4 },
       { icon: ReactIcon, index: 5 },
       { icon: SassIcon, index: 6 },
-      { icon: HtmlIcon, index: 8 },
+      { icon: AngularIcon, index: 8 },
       { icon: ReduxIcon, index: 9 },
       { icon: NextjsIcon, index: 7 },
       { icon: CssIcon, index: 11 },
@@ -109,27 +113,32 @@ export const Skills = () => {
   };
 
   return (
-    <div className="w-full min-h-svh flex flex-col justify-center px-3">
-      <p className="text-pretext">Mi marco de trabajo</p>
-      <h2 className="text-2.5xl font-extrabold mb-2">
-        Mis habilidades técnicas
-      </h2>
-      <p className="text-foreground-65 text-lg">
-        Este es un resumen de mis conocimientos en el desarrollo frontend.
-        Navega por el menú lateral derecho para acceder a los apartados sobre
-        tecnologías de{" "}
-        <strong className="text-accent font-semibold">Frontend</strong>, diseño
-        de <strong className="text-accent font-semibold">Bases de datos</strong>
-        , sistemas de{" "}
-        <strong className="text-accent font-semibold">
-          Control de versiones
-        </strong>
-        , y el software adicional que utilizo en mi trabajo diario.
-      </p>
+    <section
+      id="skills"
+      className="pt-[20svh] w-full lg:min-h-full flex flex-col justify-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto lg:flex-row lg:items-center lg:gap-8"
+    >
+      <div>
+        <p className="text-pretext">Mi marco de trabajo</p>
+        <h2 className="text-2.5xl font-extrabold mb-2">
+          Mis habilidades técnicas
+        </h2>
+        <p className="text-foreground-65 text-lg">
+          Este es un resumen de mis conocimientos en el desarrollo frontend.
+          Navega por el menú lateral derecho para acceder a los apartados sobre
+          tecnologías de{" "}
+          <strong className="text-accent font-semibold">Frontend</strong>,
+          diseño de{" "}
+          <strong className="text-accent font-semibold">Bases de datos</strong>,
+          sistemas de{" "}
+          <strong className="text-accent font-semibold">
+            Control de versiones
+          </strong>
+          , y el software adicional que utilizo en mi trabajo diario.
+        </p>
+      </div>
 
-      <div className="mt-12 flex-row flex items-center gap-3">
-      
-        <div className="grid grid-cols-4 max-w-96 h-max w-full">
+      <div className="mt-12 flex-row flex items-center justify-center gap-3 lg:mt-0">
+        <div className="grid grid-cols-4 max-w-96 h-max w-full lg:w-96">
           {cellBorders.map((borderKeys, index) => {
             const skill = skillsMap[activeTab]?.find((s) => s.index === index);
 
@@ -141,10 +150,9 @@ export const Skills = () => {
           })}
         </div>
 
-       
         <Menu activeTab={activeTab} handleClick={setActiveTab} />
       </div>
-    </div>
+    </section>
   );
 };
 

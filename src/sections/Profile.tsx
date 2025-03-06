@@ -23,8 +23,9 @@ const frygiaHeavy = localFont({
 
 export const Profile = () => {
   return (
-    <div className="w-full min-h-svh justify-center items-center flex flex-col relative overflow-hidden px-3">
+    <section className="w-full min-h-svh justify-center items-center flex flex-col relative overflow-hidden px-3">
       <div className="w-96 h-96 bg-accent absolute -top-36 -right-36 rounded-full -z-10 blur-[110px] opacity-50"></div>
+      <div className="w-96 h-96 bg-accent absolute hidden sm:block -bottom-36 -left-36 rounded-full -z-10 blur-[110px] opacity-50"></div>
 
       <span className="text-2xl font-mono">
         <Typewriter
@@ -50,10 +51,9 @@ export const Profile = () => {
         <LinkItem
           label="Descargar CV"
           leftIcon={Download04Icon}
-          href="/cv/cv.pdf"
+          href="/cv/AxelEstrada-CV.pdf"
           download
         />
-        {/*TODO: Add CV File*/}
         <LinkItem
           href="https://www.linkedin.com/in/axelestradadev"
           label="LinkedIn"
@@ -79,7 +79,7 @@ export const Profile = () => {
         <HugeiconsIcon icon={Mouse01Icon} size={16} strokeWidth={0.1} />
         <HugeiconsIcon icon={ArrowDown01Icon} size={16} strokeWidth={0.1} />
       </div>
-    </div>
+    </section>
   );
 };
 

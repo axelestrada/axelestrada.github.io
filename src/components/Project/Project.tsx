@@ -3,10 +3,10 @@ import Image from "next/image";
 import { HugeiconsIcon, HugeiconsProps } from "@hugeicons/react";
 import {
   Alert01Icon,
+  ArrowUpRight01Icon,
+  GithubFreeIcons,
   Link01Icon,
-  ReactIcon,
   SourceCodeIcon,
-  Typescript01Icon,
 } from "@hugeicons/core-free-icons";
 
 interface ProjectProps {
@@ -14,6 +14,12 @@ interface ProjectProps {
   imageAlt: string;
   title: string;
   description: string;
+  linkToGithub: string;
+  linkToDemo: string;
+  techStack: {
+    icon: HugeiconsProps["icon"];
+    title: string;
+  }[];
 }
 
 export const Project = ({
@@ -21,41 +27,75 @@ export const Project = ({
   imageSrc,
   title,
   description,
+  linkToGithub,
+  linkToDemo,
+  techStack,
 }: ProjectProps) => {
   return (
-    <div className="w-full mb-12">
-      <div className="relative w-full aspect-square bg-white rounded-md shadow-xl mb-4">
+    <div className="w-full mb-12 md:mb-0">
+      <div className="hidden md:flex mb-1">
+        {
+          <p className="text-sm text-foreground-65">
+            {techStack.map((tech) => tech.title).join(" / ")}
+          </p>
+        }
+      </div>
+      <div className="relative w-full aspect-video rounded-lg shadow-xl mb-2 md:rounded-md">
         <Image
           alt={imageAlt}
           src={imageSrc}
           fill
-          objectFit="cover"
-          className="rounded-md"
+          className="rounded-lg md:rounded-md object-cover"
         />
       </div>
 
-      <div className="px-4">
-        <h3 className="text-2.5xl font-medium mb-3">{title}</h3>
+      <div className="">
+        <div className="md:flex md:justify-between md:items-center">
+          <h3 className="text-2.5xl font-medium mb-3 md:text-lg">{title}</h3>
 
-        <div className="flex items-center mb-2">
-          <Technology icon={ReactIcon} title="React" />
-          <Technology icon={Typescript01Icon} title="Typescript" />
+          <div className="hidden md:flex flex-row items-center gap-2 mb-2">
+            <a
+              href={linkToGithub}
+              target="_blank"
+              className="cursor-pointer text-foreground hover:scale-105 transition-transform"
+            >
+              <HugeiconsIcon
+                icon={GithubFreeIcons}
+                size={18}
+                color="currentColor"
+              />
+            </a>
+
+            <a
+              href={linkToDemo}
+              target="_blank"
+              className="cursor-pointer text-foreground hover:scale-105 transition-transform"
+            >
+              <HugeiconsIcon
+                icon={ArrowUpRight01Icon}
+                size={22}
+                color="currentColor"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="flex items-center mb-2 md:hidden">
+          {techStack.map((tech, index) => (
+            <Technology key={index} icon={tech.icon} title={tech.title} />
+          ))}
         </div>
 
         <p className="text-lg text-foreground-65">{description}</p>
 
-        <div className="flex flex-row items-center mt-4">
+        <div className="flex flex-row items-center mt-4 md:hidden">
           <ActionButton
             label="Ver en Github"
-            href="https://github.com/axelestrada/todo-app"
+            href={linkToGithub}
             icon={SourceCodeIcon}
           />
 
-          <ActionButton
-            label="Demo"
-            href="https://github.com/axelestrada/todo-app"
-            icon={Link01Icon}
-          />
+          <ActionButton label="Demo" href={linkToDemo} icon={Link01Icon} />
         </div>
       </div>
     </div>

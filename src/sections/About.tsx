@@ -3,8 +3,11 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="w-full min-h-svh flex flex-col justify-center px-3">
-      <div>
+    <section
+      id="about"
+      className="pt-[20svh] w-full min-h-svh md:min-h-full flex flex-col justify-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto md:flex-row md:items-center md:gap-8"
+    >
+      <div className="md:w-2/3">
         <p className="text-pretext">Apartado personal</p>
         <h2 className="text-2.5xl font-extrabold mb-2">Conóceme mejor</h2>
 
@@ -35,17 +38,16 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="w-full flex justify-center items-center mt-20">
-        <div className="relative w-3/4 aspect-square rounded-xl shadow-xl">
+      <div className="w-full flex justify-center items-center mt-20 md:mt-0 md:w-1/3">
+        <div className="relative w-3/4 aspect-square rounded-xl shadow-xl md:w-full">
           <Image
             alt="Axel Estrada"
             src="/images/profile-picture.jpg"
             fill
-            objectFit="cover"
-            className="rounded-xl"
+            className="rounded-xl object-cover"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
