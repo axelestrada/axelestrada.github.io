@@ -34,14 +34,14 @@ export const Projects = () => {
 
       <div className="mt-12 w-full md:flex md:gap-8">
         <Project
-          imageAlt="Axel Estrada - Portafolio Personal"
-          imageSrc="/images/portfolio.png"
-          title="Portafolio Personal"
-          description="Sitio web personal donde se muestra información sobre mí, mis proyectos, habilidades técnicas y formas de contacto. Diseño moderno y responsivo con animaciones sutiles para mejorar la experiencia de usuario."
-          linkToGithub="https://github.com/axelestrada/axelestrada.github.io"
-          linkToDemo="https://axelestrada.github.io"
+          imageAlt="Markdown Notebook"
+          imageSrc="/images/markdown-notes.jpeg"
+          title="Markdown Notes"
+          description="Aplicación web desarrollada con Angular 19 para tomar notas con soporte para formato Markdown. Permite crear, editar, previsualizar y exportar notas en formato Markdown."
+          linkToGithub="https://github.com/axelestrada/markdown-notes"
+          linkToDemo="https://axelestrada.github.io/markdown-notes"
           techStack={[
-            { icon: JavaScriptIcon, title: "NextJS" },
+            { icon: JavaScriptIcon, title: "Angular" },
             { icon: Typescript01Icon, title: "TypeScript" },
             { icon: WebDesign02Icon, title: "Tailwind CSS" },
           ]}

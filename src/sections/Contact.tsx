@@ -30,14 +30,14 @@ export const Contact = () => {
         Contacta conmigo
       </h2>
 
-      <p className="text-center mb-4 text-foreground-65">
+      <p className="text-center mb-4 text-foreground-65 max-w-lg">
         Gracias por visitar mi sitio web, espero que mi perfil como
         desarrollador te interese y podamos entrar en contacto. Puedes copiar mi
         correo electrónico o descargar mi curriculum en los botones de aquí
         abajo para cualquier consulta.
       </p>
 
-      <div className="flex flex-row flex-wrap justify-center gap-3">
+      <div className="flex flex-row flex-wrap justify-center gap-3 px-4">
         <LinkItem
           label="Descargar CV"
           leftIcon={Download04Icon}

@@ -16,6 +16,7 @@ export const About = () => {
           con pasión por crear experiencias digitales eficientes y atractivas.
           Me especializo en el desarrollo de aplicaciones web y móviles con
           tecnologías como{" "}
+          <strong className="text-accent font-semibold">Angular</strong>, {" "}
           <strong className="text-accent font-semibold">React</strong> y{" "}
           <strong className="text-accent font-semibold">React Native</strong>,
           siempre buscando soluciones intuitivas y optimizadas.
