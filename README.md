@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador frontend.
 
-![Axel Estrada - Portafolio](/public/iamges/axelestrada_preview.jpeg)
+![Axel Estrada - Portafolio](/public/images/axelestrada_preview.jpeg)
 
 ## 🚀 Tecnologías Utilizadas
 
