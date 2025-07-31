@@ -1,13 +1,4 @@
-# Bloquea carpetas que no deben indexarse
 User-agent: *
-Disallow: /admin
-Disallow: /api
-Disallow: /private
-Disallow: /tmp
-Disallow: /drafts
-
-# Permite todo lo demás
 Allow: /
 
-# Sitemap para que los bots encuentren tus páginas
-Sitemap: https://axelestrada.github.io/sitemap.xml
+Sitemap: https://tudominio.com/sitemap.xml
