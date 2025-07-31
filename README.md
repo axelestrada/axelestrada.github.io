@@ -2,13 +2,14 @@
 
 Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador frontend.
 
-![Axel Estrada - Portafolio](/public/images/axelestrada_preview.jpeg)
+![Axel Estrada - Portafolio](/public/images/axelestrada_preview.png)
 
 ## 🚀 Tecnologías Utilizadas
 
 - **Next.js** - Framework de React para aplicaciones web rápidas y optimizadas.
 - **TypeScript** - Tipado estático para mejorar la robustez del código.
 - **Tailwind CSS** - Estilización eficiente y modular.
+- **Github Pages** - Despliegue de sitios web estáticos.
 
 ## 📌 Características
 
