@@ -61,54 +61,54 @@ export const Skills = () => {
     "border-l-3",
   ];
 
-  const skillsMap: Record<string, { icon: React.FC; index: number }[]> = {
+  const skillsMap: Record<string, { icon: React.FC; name: string; index: number }[]> = {
     home: [
-      { icon: TailwindIcon, index: 4 },
-      { icon: ReactIcon, index: 5 },
-      { icon: SassIcon, index: 6 },
-      { icon: SQLIcon, index: 7 },
-      { icon: AngularIcon, index: 8 },
-      { icon: GitIcon, index: 9 },
+      { icon: TailwindIcon, name: "Tailwind CSS", index: 4 },
+      { icon: ReactIcon, name: "React", index: 5 },
+      { icon: SassIcon, name: "Sass", index: 6 },
+      { icon: SQLIcon, name: "SQL", index: 7 },
+      { icon: AngularIcon, name: "Angular", index: 8 },
+      { icon: GitIcon, name: "Git", index: 9 },
     ],
     frontend: [
-      { icon: HtmlIcon, index: 1 },
-      { icon: BootstrapIcon, index: 2 },
-      { icon: TailwindIcon, index: 4 },
-      { icon: ReactIcon, index: 5 },
-      { icon: SassIcon, index: 6 },
-      { icon: AngularIcon, index: 8 },
-      { icon: ReduxIcon, index: 9 },
-      { icon: NextjsIcon, index: 7 },
-      { icon: CssIcon, index: 11 },
-      { icon: JavascriptIcon, index: 12 },
+      { icon: HtmlIcon, name: "HTML", index: 1 },
+      { icon: BootstrapIcon, name: "Bootstrap", index: 2 },
+      { icon: TailwindIcon, name: "Tailwind CSS", index: 4 },
+      { icon: ReactIcon, name: "React", index: 5 },
+      { icon: SassIcon, name: "Sass", index: 6 },
+      { icon: AngularIcon, name: "Angular", index: 8 },
+      { icon: ReduxIcon, name: "Redux", index: 9 },
+      { icon: NextjsIcon, name: "Next.js", index: 7 },
+      { icon: CssIcon, name: "CSS", index: 11 },
+      { icon: JavascriptIcon, name: "JavaScript", index: 12 },
     ],
     database: [
-      { icon: SQLIcon, index: 4 },
-      { icon: FirebaseIcon, index: 5 },
-      { icon: SQLiteIcon, index: 6 },
-      { icon: MongoDBIcon, index: 8 },
+      { icon: SQLIcon, name: "SQL", index: 4 },
+      { icon: FirebaseIcon, name: "Firebase", index: 5 },
+      { icon: SQLiteIcon, name: "SQLite", index: 6 },
+      { icon: MongoDBIcon, name: "MongoDB", index: 8 },
     ],
     languages: [
-      { icon: HtmlIcon, index: 4 },
-      { icon: JavascriptIcon, index: 5 },
-      { icon: CssIcon, index: 6 },
-      { icon: TypescriptIcon, index: 8 },
+      { icon: HtmlIcon, name: "HTML", index: 4 },
+      { icon: JavascriptIcon, name: "JavaScript", index: 5 },
+      { icon: CssIcon, name: "CSS", index: 6 },
+      { icon: TypescriptIcon, name: "TypeScript", index: 8 },
     ],
     "version-control": [
-      { icon: GitIcon, index: 4 },
-      { icon: GithubIcon, index: 5 },
-      { icon: GitlabIcon, index: 6 },
-      { icon: GithubCodespacesIcon, index: 7 },
-      { icon: BitBucketIcon, index: 8 },
-      { icon: GithubActionsIcon, index: 9 },
+      { icon: GitIcon, name: "Git", index: 4 },
+      { icon: GithubIcon, name: "GitHub", index: 5 },
+      { icon: GitlabIcon, name: "GitLab", index: 6 },
+      { icon: GithubCodespacesIcon, name: "GitHub Codespaces", index: 7 },
+      { icon: BitBucketIcon, name: "Bitbucket", index: 8 },
+      { icon: GithubActionsIcon, name: "GitHub Actions", index: 9 },
     ],
     tools: [
-      { icon: NpmIcon, index: 4 },
-      { icon: VsCodeIcon, index: 5 },
-      { icon: BabelIcon, index: 6 },
-      { icon: DockerIcon, index: 7 },
-      { icon: FigmaIcon, index: 8 },
-      { icon: StackOverflowIcon, index: 9 },
+      { icon: NpmIcon, name: "NPM", index: 4 },
+      { icon: VsCodeIcon, name: "VS Code", index: 5 },
+      { icon: BabelIcon, name: "Babel", index: 6 },
+      { icon: DockerIcon, name: "Docker", index: 7 },
+      { icon: FigmaIcon, name: "Figma", index: 8 },
+      { icon: StackOverflowIcon, name: "Stack Overflow", index: 9 },
     ],
   };
 
@@ -143,7 +143,7 @@ export const Skills = () => {
             const skill = skillsMap[activeTab]?.find((s) => s.index === index);
 
             return (
-              <Cell key={index} className={borderKeys}>
+              <Cell key={index} className={borderKeys} tooltip={skill?.name}>
                 {skill?.icon && <skill.icon />}
               </Cell>
             );
@@ -159,14 +159,22 @@ export const Skills = () => {
 const Cell = ({
   className,
   children,
+  tooltip,
 }: {
   className?: string;
   children?: React.ReactNode;
+  tooltip?: string;
 }) => (
   <div
-    className={`border-accent h-20 w-full flex justify-center items-center p-3 ${className}`}
+    className={`border-accent h-20 w-full flex justify-center items-center p-3 relative group ${className}`}
   >
     {children}
+
+    {tooltip && (
+      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap pointer-events-none z-10">
+        {tooltip}
+      </div>
+    )}
   </div>
 );
 
@@ -216,11 +224,10 @@ const MenuItem = ({
   return (
     <button
       onClick={() => onClick(href)}
-      className={`my-2 bg-black dark:bg-white rounded-[10px] p-1 hover:bg-opacity-20 transition-colors ${
-        isActive
-          ? "bg-opacity-20 dark:bg-opacity-15"
-          : "bg-opacity-0 dark:bg-opacity-0"
-      }`}
+      className={`my-2 bg-black dark:bg-white rounded-[10px] p-1 hover:bg-opacity-20 transition-colors ${isActive
+        ? "bg-opacity-20 dark:bg-opacity-15"
+        : "bg-opacity-0 dark:bg-opacity-0"
+        }`}
     >
       <HugeiconsIcon
         icon={icon}
