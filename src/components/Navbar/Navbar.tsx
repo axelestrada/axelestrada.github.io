@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Cancel01Icon, Menu01Icon } from "@hugeicons/core-free-icons";
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 const frygiaHeavy = localFont({
   src: "../../../public/fonts/frygia-heavy.ttf",
@@ -39,17 +40,15 @@ export const Navbar = () => {
               icon={isOpen ? Cancel01Icon : Menu01Icon}
               size={32}
               strokeWidth={0.6}
-              className={`${
-                isOpen ? "text-[#e74c3c]" : "text-accent"
-              } cursor-pointer`}
+              className={`${isOpen ? "text-[#e74c3c]" : "text-accent"
+                } cursor-pointer`}
             />
           </button>
         </div>
 
         <nav
-          className={`${
-            isOpen ? "flex" : "hidden"
-          } py-2 px-3 flex flex-col justify-center items-center md:flex md:flex-row md:gap-4`}
+          className={`${isOpen ? "flex" : "hidden"
+            } py-2 px-3 flex flex-col justify-center items-center md:flex md:flex-row md:gap-4`}
         >
           <a
             href="#projects"
@@ -79,6 +78,7 @@ export const Navbar = () => {
           >
             Contacto
           </a>
+          <ThemeToggle />
         </nav>
       </div>
     </div>

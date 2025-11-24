@@ -14,17 +14,17 @@
   --pretext: #2c573e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #161616;
-    --foreground: #ebebeb;
-    --foreground-65: #ffffffa5;
-    --accent: #13C469;
-    --accent-10: #13C4691a;
-    --navbar-bg: #242424df;
-    --pretext: #b7ffe2cd;
-  }
+
+:root.dark {
+  --background: #161616;
+  --foreground: #ebebeb;
+  --foreground-65: #ffffffa5;
+  --accent: #13C469;
+  --accent-10: #13C4691a;
+  --navbar-bg: #242424df;
+  --pretext: #b7ffe2cd;
 }
+
 
 html {
   scroll-behavior: smooth;
