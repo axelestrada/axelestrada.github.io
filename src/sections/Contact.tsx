@@ -46,6 +46,7 @@ export const Contact = () => {
         />
         <LinkItem
           label="axele1524@gmail.com"
+          href="mailto:axele1524@gmail.com"
           leftIcon={Mail01Icon}
           rightIcon={Copy01Icon}
           onClick={() => {

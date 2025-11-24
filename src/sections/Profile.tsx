@@ -66,6 +66,7 @@ export const Profile = () => {
         />
         <LinkItem
           label="axele1524@gmail.com"
+          href="mailto:axele1524@gmail.com"
           leftIcon={Mail01Icon}
           rightIcon={Copy01Icon}
           onClick={() => {
@@ -102,15 +103,12 @@ export const LinkItem = ({
 }: LinkItemProps) => {
   return (
     <a
-      href={onClick ? "#" : href}
+      href={href}
       target={download ? "_self" : "_blank"}
       rel="noopener noreferrer"
       download={download}
-      onClick={(e) => {
-        if (onClick) {
-          e.preventDefault();
-          onClick();
-        }
+      onClick={() => {
+        onClick?.();
       }}
       className="text-accent cursor-pointer bg-accent-10 py-2 px-3 rounded-full flex flex-row items-center hover:scale-105 transition-transform"
     >
