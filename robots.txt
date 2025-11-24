@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://axelestrada.github.io/sitemap.xml
+Sitemap: https://tudominio.com/sitemap.xml
