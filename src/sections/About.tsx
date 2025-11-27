@@ -47,9 +47,7 @@ export const About = () => {
           </a>
           , un proyecto que me ha obligado a enfrentar todo lo que normalmente
           queda fuera de los tutoriales: planificación real, arquitectura,
-          mantenimiento, infraestructura, etc. Ha sido un proceso retador, pero
-          me ha dado una perspectiva más completa de lo que implica crear
-          software real.
+          mantenimiento, infraestructura, etc.
         </p>
       </div>
 
