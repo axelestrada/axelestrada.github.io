@@ -12,30 +12,44 @@ export const About = () => {
         <h2 className="text-2.5xl font-extrabold mb-2">Conóceme mejor</h2>
 
         <p className="text-foreground-65 text-lg">
-          Desarrollador <b className="text-accent font-semibold">Frontend</b>{" "}
-          con pasión por crear experiencias digitales eficientes y atractivas.
-          Me especializo en el desarrollo de aplicaciones web y móviles con
-          tecnologías como{" "}
-          <strong className="text-accent font-semibold">Angular</strong>, {" "}
-          <strong className="text-accent font-semibold">React</strong> y{" "}
-          <strong className="text-accent font-semibold">React Native</strong>,
-          siempre buscando soluciones intuitivas y optimizadas.
-          <br /> <br />
-          Estoy comprometido con el aprendizaje continuo y la mejora constante
-          de mis habilidades técnicas. He trabajado en proyectos personales como{" "}
-          <strong className="text-accent font-semibold">Monety</strong>, una
-          aplicación de gestión financiera, lo que me ha permitido profundizar
-          en arquitectura de software, optimización de bases de datos y
-          experiencia de usuario.
-          <br />
-          <br />
-          Me considero una persona{" "}
-          <b className="text-accent font-semibold">creativa</b>,{" "}
-          <b className="text-accent font-semibold">adaptable</b> y con capacidad
-          tanto para el trabajo en equipo bajo metodologías ágiles como para
-          asumir retos de manera autónoma. Mi objetivo es seguir creciendo como
-          desarrollador y aportar valor a través de cada proyecto en el que
-          participe.
+          Hola, mi nombre es{" "}
+          <b className="text-accent font-semibold">Axel Estrada</b> y soy
+          desarrollador de software con una pasión especial por el frontend. Me
+          caracterizo por siempre querer que las cosas funcionen de manera
+          perfecta, se vean claras y puedan mantenerse sin mucho problema.
+        </p>
+
+        <br />
+
+        <p className="text-foreground-65 text-lg">
+          A lo largo de mi carrera he trabajado con diferentes tecnologías como{" "}
+          <strong className="text-accent font-semibold">React</strong>,{" "}
+          <strong className="text-accent font-semibold">Angular</strong> y{" "}
+          <strong className="text-accent font-semibold">Vue</strong>,
+          desarrollando un cariño especial por{" "}
+          <strong className="text-accent font-semibold">React</strong>, aunque
+          disfruto adaptarme a lo que el proyecto requiera.
+        </p>
+
+        <br />
+
+        <p className="text-foreground-65 text-lg">
+          Actualmente trabajo como{" "}
+          <b className="text-accent font-semibold">Desarrollador Frontend</b> en
+          una institución pública. Mientras que en paralelo desarrollo una
+          aplicación móvil por mi cuenta llamada{" "}
+          <a
+            href="https://github.com/axelestrada/monety"
+            target="_blank"
+            className="text-accent font-semibold"
+          >
+            Monety
+          </a>
+          , un proyecto que me ha obligado a enfrentar todo lo que normalmente
+          queda fuera de los tutoriales: planificación real, arquitectura,
+          mantenimiento, infraestructura, etc. Ha sido un proceso retador, pero
+          me ha dado una perspectiva más completa de lo que implica crear
+          software real.
         </p>
       </div>
 
