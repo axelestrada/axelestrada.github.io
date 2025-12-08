@@ -19,7 +19,7 @@ const FooterLink = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-foreground-65 flex justify-center items-center gap-0.5 cursor-pointer hover:text-black dark:hover:text-white transition-colors"
+    className="text-foreground-65 font-light flex justify-center items-center gap-0.5 cursor-pointer hover:text-black dark:hover:text-white transition-colors"
   >
     {icon && <HugeiconsIcon icon={icon} size={20} className={iconClassName} />}
     {children}

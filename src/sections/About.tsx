@@ -11,7 +11,7 @@ export const About = () => {
         <p className="text-pretext">Apartado personal</p>
         <h2 className="text-2.5xl font-extrabold mb-2">Conóceme mejor</h2>
 
-        <p className="text-foreground-65 text-lg">
+        <p className="text-foreground-65 text-lg font-light">
           Hola, mi nombre es{" "}
           <b className="text-accent font-semibold">Axel Estrada</b> y soy
           desarrollador de software con una pasión especial por el frontend. Me
@@ -21,7 +21,7 @@ export const About = () => {
 
         <br />
 
-        <p className="text-foreground-65 text-lg">
+        <p className="text-foreground-65 text-lg font-light">
           A lo largo de mi carrera he trabajado con diferentes tecnologías como{" "}
           <strong className="text-accent font-semibold">React</strong>,{" "}
           <strong className="text-accent font-semibold">Angular</strong> y{" "}
@@ -33,13 +33,13 @@ export const About = () => {
 
         <br />
 
-        <p className="text-foreground-65 text-lg">
+        <p className="text-foreground-65 text-lg font-light">
           Actualmente trabajo como{" "}
           <b className="text-accent font-semibold">Desarrollador Frontend</b> en
           una institución pública. Mientras que en paralelo desarrollo una
           aplicación móvil por mi cuenta llamada{" "}
           <a
-            href="https://github.com/axelestrada/monety"
+            href="https://monety.framer.website"
             target="_blank"
             className="text-accent font-semibold"
           >

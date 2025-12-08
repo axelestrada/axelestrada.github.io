@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador frontend.
 
-![Axel Estrada - Portafolio](/public/images/axelestrada_preview.png)
+![Axel Estrada - Portafolio](/public/images/portfolio-cover.png)
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -58,11 +58,10 @@ El proyecto está desplegado en Github Pages. Puedes verlo en línea aquí: [Mi 
 
 Si quieres saber más sobre mi trabajo o colaborar en un proyecto, puedes contactarme a través de:
 
-- **Email:** [axele1524@gmail.com](mailto\:axele1524@gmail.com)
+- **Email:** [axele1524@gmail.com](mailto:axele1524@gmail.com)
 - **LinkedIn:** [linkedin.com/in/axelestradadev](https://linkedin.com/in/axelestradadev)
 - **GitHub:** [github.com/axelestrada](https://github.com/axelestrada)
 
 ---
 
 ¡Gracias por visitar mi portafolio!
-

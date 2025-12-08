@@ -61,7 +61,10 @@ export const Skills = () => {
     "border-l-3",
   ];
 
-  const skillsMap: Record<string, { icon: React.FC; name: string; index: number }[]> = {
+  const skillsMap: Record<
+    string,
+    { icon: React.FC; name: string; index: number }[]
+  > = {
     home: [
       { icon: TailwindIcon, name: "Tailwind CSS", index: 4 },
       { icon: ReactIcon, name: "React", index: 5 },
@@ -122,7 +125,7 @@ export const Skills = () => {
         <h2 className="text-2.5xl font-extrabold mb-2">
           Mis habilidades técnicas
         </h2>
-        <p className="text-foreground-65 text-lg">
+        <p className="text-foreground-65 text-lg font-light">
           Este es un resumen de mis conocimientos en el desarrollo frontend.
           Navega por el menú lateral derecho para acceder a los apartados sobre
           tecnologías de{" "}
@@ -224,10 +227,11 @@ const MenuItem = ({
   return (
     <button
       onClick={() => onClick(href)}
-      className={`my-2 bg-black dark:bg-white rounded-[10px] p-1 hover:bg-opacity-20 transition-colors ${isActive
-        ? "bg-opacity-20 dark:bg-opacity-15"
-        : "bg-opacity-0 dark:bg-opacity-0"
-        }`}
+      className={`my-2 bg-black dark:bg-white rounded-[10px] p-1 hover:bg-opacity-20 transition-colors ${
+        isActive
+          ? "bg-opacity-20 dark:bg-opacity-15"
+          : "bg-opacity-0 dark:bg-opacity-0"
+      }`}
     >
       <HugeiconsIcon
         icon={icon}
