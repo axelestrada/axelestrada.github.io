@@ -31,6 +31,7 @@ export const Projects = () => {
           <a
             href="https://github.com/axelestrada"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-accent font-semibold cursor-pointer inline-block hover:scale-105 transition-transform"
           >
             GitHub
@@ -44,7 +45,7 @@ export const Projects = () => {
           imageAlt="Monety App"
           imageSrc="/images/monety-cover.png"
           title="Monety - Budget & Expenses Tracker"
-          description="Aplicación móvil de gestión financiera personal que permite registrar transacciones, analizar gastos, gestionar cuentas y sincronizar datos en tiempo real. Incluye categorización inteligente, estadísticas avanzadas, backups locales y en la nube, y un diseño pensado para usarse a diario sin fricción."
+          description="Aplicación móvil de gestión financiera personal que permite registrar transacciones, analizar gastos, gestionar cuentas y sincronizar datos en tiempo real. Incluye categorización inteligente, estadísticas avanzadas, backups locales y en la nube."
           linkToDemo="https://monety.framer.website"
           techStack={[
             { icon: ReactIcon, title: "React Native" },

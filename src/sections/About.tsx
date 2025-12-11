@@ -7,7 +7,7 @@ export const About = () => {
       id="about"
       className="pt-[20svh] w-full min-h-svh md:min-h-full flex flex-col justify-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto md:flex-row md:items-center md:gap-8"
     >
-      <div className="md:w-2/3">
+      <div className="md:w-2/3 text-center md:text-left">
         <p className="text-pretext">Apartado personal</p>
         <h2 className="text-2.5xl font-extrabold mb-2">Conóceme mejor</h2>
 
@@ -41,6 +41,7 @@ export const About = () => {
           <a
             href="https://monety.framer.website"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-accent font-semibold"
           >
             Monety
