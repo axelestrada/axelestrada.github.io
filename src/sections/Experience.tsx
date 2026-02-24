@@ -1,20 +1,33 @@
 "use client";
 
-import React from "react";
+import { Briefcase01Icon, Calendar01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar01Icon, Briefcase01Icon } from "@hugeicons/core-free-icons";
 
 export const Experience = () => {
   const experiences = [
     {
       id: 1,
+      role: "Desarrollador Full Stack",
+      company: "Ingeniería Digital",
+      url: "https://www.ingenieria.digital",
+      date: "Febrero 2026 - Actualidad",
+      description: [
+        "Desarrollo integral del proyecto Medicatel, una plataforma digital orientada a la adquisición y gestión de seguros médicos.",
+        "Implementación de frontend moderno y APIs backend para funcionalidades como búsqueda de médicos, cotización de seguros, gestión de citas médicas, exámenes y tratamientos.",
+        "Diseño de arquitectura escalable, modelado de base de datos y optimización de flujos críticos para garantizar rendimiento, seguridad y mantenibilidad del sistema.",
+        "Colaboración directa en decisiones técnicas y estratégicas para alinear el producto con los objetivos del negocio y la experiencia del usuario.",
+      ],
+    },
+    {
+      id: 2,
       role: "Desarrollador Frontend",
       company: "Senprende",
+      url: "https://senprende.hn/",
       date: "Mayo 2025 - Diciembre 2025",
       description: [
-        "Desarrollo y mantenimiento de plataformas internas orientadas a fortalecer el comercio electrónico nacional, priorizando interfaces claras y accesibles.",
-        "Análisis e interpretación de requerimientos para transformar necesidades institucionales en soluciones técnicas claras, eficientes y alineadas con los objetivos del proyecto.",
-        "Implementación de mejoras continuas en flujos, componentes y módulos existentes, garantizando estabilidad, escalabilidad y una experiencia de usuario coherente en toda la plataforma.",
+        "Desarrollo y mantenimiento de plataformas internas orientadas a fortalecer el comercio electrónico nacional.",
+        "Análisis de requerimientos institucionales y transformación de necesidades de negocio en soluciones técnicas claras y sostenibles.",
+        "Mejora continua de flujos, componentes y módulos existentes, garantizando estabilidad y coherencia en la experiencia de usuario.",
       ],
     },
   ];
@@ -29,18 +42,19 @@ export const Experience = () => {
           Mi trayectoria
         </h2>
         <p className="text-foreground-65 text-lg text-center md:text-left font-light">
-          En esta sección comparto parte de mi recorrido profesional, destacando
-          las experiencias que han marcado mi crecimiento como desarrollador. Si
-          deseas conocer con mayor detalle mi contribución en distintos
-          proyectos y roles, te invito a visitar mi perfil de{" "}
+          Aquí comparto parte de mi recorrido profesional y los proyectos que
+          han marcado mi evolución como desarrollador. Si deseas conocer más
+          detalles técnicos y responsabilidades específicas, puedes visitar mi
+          perfil de{" "}
           <a
             href="https://www.linkedin.com/in/axelestradadev"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-accent font-semibold cursor-pointer inline-block hover:scale-105 transition-transform"
           >
             LinkedIn
           </a>
-          , donde podrás explorar más a fondo mi trayectoria.
+          .
         </p>
       </div>
 
@@ -59,12 +73,19 @@ export const Experience = () => {
 
             <div className="flex items-center gap-2 mb-4 text-foreground-65 font-medium">
               <HugeiconsIcon icon={Briefcase01Icon} size={18} />
-              <span>{exp.company}</span>
+              <a
+                href={exp.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer inline-block transition-colors hover:text-foreground"
+              >
+                {exp.company}
+              </a>
             </div>
 
             <ul className="list-disc list-outside ml-4 space-y-2 text-foreground-65 font-light">
-              {exp.description.map((item, index) => (
-                <li key={index}>{item}</li>
+              {exp.description.map((item) => (
+                <li key={`exp-${item.split(" ")[0]}`}>{item}</li>
               ))}
             </ul>
           </div>
