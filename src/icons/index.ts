@@ -14,7 +14,7 @@ import { GitlabIcon } from "./GitlabIcon";
 import { JavascriptIcon } from "./JavascriptIcon";
 import { NextjsIcon } from "./NextjsIcon";
 import { ReduxIcon } from "./ReduxIcon";
-import { SQLIcon } from "./SQLIcon";
+import { MySQLIcon } from "./MySQLIcon";
 import { SQLiteIcon } from "./SQLiteIcon";
 import { StackOverflowIcon } from "./StackOverflowIcon";
 import { TailwindIcon } from "./TailwindIcon";
@@ -23,6 +23,11 @@ import { NpmIcon } from "./NpmIcon";
 import { ReactIcon } from "./ReactIcon";
 import { TypescriptIcon } from "./TypescriptIcon";
 import { MongoDBIcon } from "./MongoDBIcon";
+import { NodejsIcon } from "./NodejsIcon";
+import { ExpressIcon } from "./ExpressIcon";
+import { PostgresIcon } from "./PostgresIcon";
+import { SlackIcon } from "./SlackIcon";
+import { DrizzleIcon } from "./DrizzleIcon";
 
 export {
   BabelIcon,
@@ -43,11 +48,16 @@ export {
   NpmIcon,
   ReactIcon,
   ReduxIcon,
-  SQLIcon,
+  MySQLIcon,
   SQLiteIcon,
   StackOverflowIcon,
   TailwindIcon,
   TypescriptIcon,
   VsCodeIcon,
-  MongoDBIcon
+  MongoDBIcon,
+  NodejsIcon,
+  ExpressIcon,
+  PostgresIcon,
+  SlackIcon,
+  DrizzleIcon,
 };
