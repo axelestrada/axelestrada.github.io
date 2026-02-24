@@ -1,14 +1,14 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Axel Estrada | Desarrollador Frontend",
+  title: "Axel Estrada | Desarrollador Full Stack",
   description:
-    "Portafolio de Axel, desarrollador frontend enfocado en crear interfaces modernas y optimizadas utilizando tecnologías como React, Angular y Vue. Descubre mis proyectos, experiencia y habilidades técnicas.",
+    "Portafolio de Axel Estrada, desarrollador full stack enfocado en construir productos completos: frontend moderno, APIs robustas, bases de datos y despliegues. Descubre mis proyectos, experiencia y habilidades técnicas.",
   openGraph: {
-    title: "Axel Estrada | Desarrollador Frontend",
+    title: "Axel Estrada | Desarrollador Full Stack",
     description:
-      "Explora el portafolio de Axel, experto en desarrollo frontend con tecnologías modernas. Diseño limpio, rendimiento optimizado y enfoque en UX.",
+      "Explora el portafolio de Axel Estrada: desarrollo full stack (web y apps), APIs, bases de datos y arquitectura. Enfoque en rendimiento, seguridad y buena UX.",
     type: "website",
     url: "https://axelestrada.github.io",
     siteName: "Axel Estrada",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Axel Estrada | Desarrollador Frontend",
+    title: "Axel Estrada | Desarrollador Full Stack",
     description:
-      "Explora el portafolio de Axel, experto en desarrollo frontend con tecnologías modernas. Diseño limpio, rendimiento optimizado y enfoque en UX.",
+      "Portafolio de Axel Estrada: desarrollo full stack con enfoque en rendimiento, seguridad y experiencia de usuario. Web, APIs, bases de datos y despliegues.",
     images: {
       url: "https://axelestrada.github.io/images/axelestrada_preview.png",
       alt: "Axel Estrada",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  }
+  },
 };
 
 export default function RootLayout({

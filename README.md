@@ -1,6 +1,6 @@
 # 🖥️ Mi Portafolio Personal
 
-Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador frontend.
+Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador full-stack.
 
 ![Axel Estrada - Portafolio](/public/images/portfolio-cover.png)
 

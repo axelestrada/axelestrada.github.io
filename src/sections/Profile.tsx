@@ -1,8 +1,4 @@
 "use client";
-import React from "react";
-
-import localFont from "next/font/local";
-import { HugeiconsIcon, HugeiconsProps } from "@hugeicons/react";
 
 import {
   Alert01Icon,
@@ -14,6 +10,8 @@ import {
   Mail01Icon,
   Mouse01Icon,
 } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon, type HugeiconsProps } from "@hugeicons/react";
+import localFont from "next/font/local";
 
 import { Typewriter } from "nextjs-simple-typewriter";
 
@@ -45,7 +43,7 @@ export const Profile = () => {
         Axel Estrada.
       </h1>
 
-      <p className="text-2xl font-medium mb-4">Desarrollador Frontend</p>
+      <p className="text-2xl font-medium mb-4">Desarrollador Full Stack</p>
 
       <div className="flex flex-row flex-wrap justify-center gap-2">
         <LinkItem
