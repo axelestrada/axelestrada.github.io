@@ -1,16 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
-import { Project } from "@/components/Project/Project";
 import {
-  JavaScriptIcon,
-  ReactIcon,
-  Typescript01Icon,
-  WebDesign02Icon,
   ArrowDown01Icon,
   ArrowUp01Icon,
+  JavaScriptIcon,
+  ReactIcon,
+  SqlIcon,
+  Typescript01Icon,
+  WebDesign02Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { useState } from "react";
+import { Project } from "@/components/Project/Project";
 
 export const Projects = () => {
   const [showMore, setShowMore] = useState(false);
@@ -55,21 +56,36 @@ export const Projects = () => {
         />
 
         <Project
-          imageAlt="Markdown Notes"
-          imageSrc="/images/markdown-notes.png"
-          title="Markdown Notes"
-          description="Aplicación web creada con Angular 19 para gestionar notas en formato Markdown. Incluye editor con vista previa en tiempo real, organización de notas y exportación a archivos .md para un flujo de trabajo rápido y minimalista."
-          linkToGithub="https://github.com/axelestrada/markdown-notes"
-          linkToDemo="https://axelestrada.github.io/markdown-notes"
+          imageAlt="Mi Pulpería App"
+          imageSrc="/images/mi-pulperia.png"
+          title="Mi Pulpería - Sistema de Punto de Venta"
+          description="Aplicación de escritorio diseñada para la gestión integral de una pulpería o pequeño comercio. Incluye módulo de punto de venta (POS), control de inventario, gestión de clientes, sesiones de caja y reportes. Construida como solución offline-first con base de datos local y arquitectura modular."
+          linkToGithub="https://github.com/axelestrada/mi-pulperia"
+          linkToDemo="https://github.com/axelestrada/mi-pulperia/releases/latest"
           techStack={[
-            { icon: JavaScriptIcon, title: "Angular" },
+            { icon: ReactIcon, title: "React" },
             { icon: Typescript01Icon, title: "TypeScript" },
-            { icon: WebDesign02Icon, title: "Tailwind CSS" },
+            { icon: ReactIcon, title: "Electron" },
+            { icon: SqlIcon, title: "SQLite" },
           ]}
         />
 
         {showMore && (
           <>
+            <Project
+              imageAlt="Markdown Notes"
+              imageSrc="/images/markdown-notes.png"
+              title="Markdown Notes"
+              description="Aplicación web creada con Angular 19 para gestionar notas en formato Markdown. Incluye editor con vista previa en tiempo real, organización de notas y exportación a archivos .md para un flujo de trabajo rápido y minimalista."
+              linkToGithub="https://github.com/axelestrada/markdown-notes"
+              linkToDemo="https://axelestrada.github.io/markdown-notes"
+              techStack={[
+                { icon: JavaScriptIcon, title: "Angular" },
+                { icon: Typescript01Icon, title: "TypeScript" },
+                { icon: WebDesign02Icon, title: "Tailwind CSS" },
+              ]}
+            />
+
             <Project
               imageAlt="Portafolio Personal"
               imageSrc="/images/portfolio-cover.png"
@@ -78,22 +94,9 @@ export const Projects = () => {
               linkToGithub="https://github.com/axelestrada/axelestrada.github.io"
               linkToDemo="https://axelestrada.github.io"
               techStack={[
-                { icon: ReactIcon, title: "Next.js" },
+                { icon: ReactIcon, title: "NextJS" },
                 { icon: Typescript01Icon, title: "TypeScript" },
                 { icon: WebDesign02Icon, title: "Tailwind CSS" },
-              ]}
-            />
-
-            <Project
-              imageAlt="Temporizador Pomodoro"
-              imageSrc="/images/pomodoro-timer.png"
-              title="Temporizador Pomodoro"
-              description="Temporizador basado en la técnica Pomodoro que divide el trabajo en ciclos de enfoque y descanso. Ofrece ajustes personalizables y una interfaz simple y clara que ayuda a mantener la productividad sin distracciones."
-              linkToGithub="https://github.com/axelestrada/pomodoroapp"
-              linkToDemo="https://axelestrada.github.io/pomodoroapp"
-              techStack={[
-                { icon: ReactIcon, title: "ReactJS" },
-                { icon: Typescript01Icon, title: "TypeScript" },
               ]}
             />
           </>
@@ -102,6 +105,7 @@ export const Projects = () => {
         <button
           onClick={() => setShowMore(!showMore)}
           className="mt-8 cursor-pointer md:col-span-full flex items-center gap-2 mx-auto"
+          type="button"
         >
           {showMore ? "Mostrar menos" : "Mostrar más"}
           <HugeiconsIcon
