@@ -44,7 +44,7 @@ export const Projects = () => {
       <div className="mt-12 w-full md:grid md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:gap-8">
         <Project
           imageAlt="Monety App"
-          imageSrc="/images/monety-cover.png"
+          imageSrc="/images/monety-cover.webp"
           title="Monety - Budget & Expenses Tracker"
           description="Aplicación móvil de gestión financiera personal que permite registrar transacciones, analizar gastos, gestionar cuentas y sincronizar datos en tiempo real. Incluye categorización inteligente, estadísticas avanzadas, backups locales y en la nube."
           linkToDemo="https://monety.framer.website"
@@ -57,11 +57,10 @@ export const Projects = () => {
 
         <Project
           imageAlt="Mi Pulpería App"
-          imageSrc="/images/mi-pulperia.png"
+          imageSrc="/images/mi-pulperia.webp"
           title="Mi Pulpería - Sistema de Punto de Venta"
           description="Aplicación de escritorio diseñada para la gestión integral de una pulpería o pequeño comercio. Incluye módulo de punto de venta (POS), control de inventario, gestión de clientes, sesiones de caja y reportes. Construida como solución offline-first con base de datos local y arquitectura modular."
-          linkToGithub="https://github.com/axelestrada/mi-pulperia"
-          linkToDemo="https://github.com/axelestrada/mi-pulperia/releases/latest"
+          linkToDemo="https://github.com/axelestrada/mi-pulperia-releases/releases/latest"
           techStack={[
             { icon: ReactIcon, title: "React" },
             { icon: Typescript01Icon, title: "TypeScript" },
@@ -73,28 +72,27 @@ export const Projects = () => {
         {showMore && (
           <>
             <Project
+              imageAlt="JSON Master"
+              imageSrc="/images/json-master.webp"
+              title="JSON Master"
+              description="Editor de archivos JSON hecho con Vanilla JavaScript y Tailwind CSS. Permite editar objetos, agregar propiedades, mapear arreglos y transformar datos de manera rápida e interactiva."
+              linkToGithub="https://github.com/axelestrada/json-editor"
+              linkToDemo="https://axelestrada.github.io/json-editor"
+              techStack={[
+                { icon: JavaScriptIcon, title: "JavaScript" },
+                { icon: WebDesign02Icon, title: "Tailwind CSS" },
+              ]}
+            />
+
+            <Project
               imageAlt="Markdown Notes"
-              imageSrc="/images/markdown-notes.png"
+              imageSrc="/images/markdown-notes.webp"
               title="Markdown Notes"
               description="Aplicación web creada con Angular 19 para gestionar notas en formato Markdown. Incluye editor con vista previa en tiempo real, organización de notas y exportación a archivos .md para un flujo de trabajo rápido y minimalista."
               linkToGithub="https://github.com/axelestrada/markdown-notes"
               linkToDemo="https://axelestrada.github.io/markdown-notes"
               techStack={[
                 { icon: JavaScriptIcon, title: "Angular" },
-                { icon: Typescript01Icon, title: "TypeScript" },
-                { icon: WebDesign02Icon, title: "Tailwind CSS" },
-              ]}
-            />
-
-            <Project
-              imageAlt="Portafolio Personal"
-              imageSrc="/images/portfolio-cover.png"
-              title="Portafolio Personal"
-              description="Sitio web profesional desarrollado para mostrar mi trabajo, experiencia y proyectos. Construido con un enfoque minimalista, animaciones fluidas y un diseño centrado en la claridad y la accesibilidad."
-              linkToGithub="https://github.com/axelestrada/axelestrada.github.io"
-              linkToDemo="https://axelestrada.github.io"
-              techStack={[
-                { icon: ReactIcon, title: "NextJS" },
                 { icon: Typescript01Icon, title: "TypeScript" },
                 { icon: WebDesign02Icon, title: "Tailwind CSS" },
               ]}
