@@ -265,7 +265,7 @@ const MenuItem = ({
       />
 
       {tooltip && (
-        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap pointer-events-none z-10">
+        <div className="absolute sm:bottom-full max-sm:right-10 max-sm:bottom-0 sm:left-1/2 sm:-translate-x-1/2 sm:mb-2 px-3 py-1.5 bg-black dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap pointer-events-none z-10">
           {tooltip}
         </div>
       )}
