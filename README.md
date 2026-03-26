@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habilidades y experiencia como desarrollador full-stack.
 
-![Axel Estrada - Portafolio](/public/images/portfolio-cover.png)
+![Axel Estrada - Portafolio](/public/images/portfolio-cover.webp)
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -34,11 +34,11 @@ Bienvenido a mi portafolio de desarrollo web. Aquí muestro mis proyectos, habil
 
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/axelestrada/axelestrada.github.io.git
+   git clone https://github.com/axelestrada/axelestrada.github.io.git portafolio
    ```
 2. Navegar al directorio del proyecto:
    ```sh
-   cd axelestrada.github.io
+   cd portafolio
    ```
 3. Instalar dependencias:
    ```sh

@@ -57,7 +57,7 @@ export const About = () => {
         <div className="relative w-3/4 aspect-square rounded-xl shadow-xl md:w-full">
           <Image
             alt="Axel Estrada"
-            src="/images/profile-picture.jpg"
+            src="/images/profile-picture.webp"
             fill
             className="rounded-xl object-cover"
           />
