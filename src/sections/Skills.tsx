@@ -72,7 +72,7 @@ export const Skills = () => {
   > = {
     home: [
 { icon: HtmlIcon, name: "HTML", index: 1 },
-{ icon: HtmlIcon, name: "HTML", index: 2 },
+{ icon: TailwindIcon, name: "Tailwind CSS", index: 2 },
       { icon: TypescriptIcon, name: "TypeScript", index: 4 },
       { icon: ReactIcon, name: "React", index: 5 },
       { icon: NextjsIcon, name: "Next.js", index: 6 },
