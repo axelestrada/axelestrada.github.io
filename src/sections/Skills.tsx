@@ -71,12 +71,16 @@ export const Skills = () => {
     { icon: React.FC; name: string; index: number }[]
   > = {
     home: [
+{ icon: HtmlIcon, name: "HTML", index: 1 },
+{ icon: HtmlIcon, name: "HTML", index: 2 },
       { icon: TypescriptIcon, name: "TypeScript", index: 4 },
       { icon: ReactIcon, name: "React", index: 5 },
       { icon: NextjsIcon, name: "Next.js", index: 6 },
       { icon: MySQLIcon, name: "MySQL", index: 7 },
-      { icon: DockerIcon, name: "Docker", index: 8 },
-      { icon: GitIcon, name: "Git", index: 9 },
+          { icon: AngularIcon, name: "Angular", index: 8 },
+      { icon: ReduxIcon, name: "Redux", index: 9 },
+{ icon: CssIcon, name: "CSS", index: 11 },
+      { icon: JavascriptIcon, name: "JavaScript", index: 12 },
     ],
     frontend: [
       { icon: HtmlIcon, name: "HTML", index: 1 },
