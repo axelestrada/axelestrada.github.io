@@ -78,7 +78,7 @@ export const Skills = () => {
       { icon: NextjsIcon, name: "Next.js", index: 6 },
       { icon: MySQLIcon, name: "MySQL", index: 7 },
           { icon: AngularIcon, name: "Angular", index: 8 },
-      { icon: ReduxIcon, name: "Redux", index: 9 },
+       { icon: NodejsIcon, name: "Node.js", index: 9 },
 { icon: CssIcon, name: "CSS", index: 11 },
       { icon: JavascriptIcon, name: "JavaScript", index: 12 },
     ],
