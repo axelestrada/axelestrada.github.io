@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -r https://x-access-token:${GITHUB_TOKEN}@github.com/axelestrada/axelestrada.github.io.git",
     "lint": "next lint"
   },
   "homepage": "https://axelestrada.github.io",
