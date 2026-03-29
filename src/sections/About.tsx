@@ -35,10 +35,7 @@ export const About = () => {
         <br />
 
         <p className="text-foreground-65 text-lg font-light">
-          Actualmente trabajo como{" "}
-          <b className="text-accent font-semibold">Desarrollador Full Stack</b>,
-          participando en decisiones técnicas que van desde la estructura del
-          sistema hasta la implementación final. En paralelo desarrollo
+          Actualmente me encuentro desarrollando
           proyectos propios como{" "}
           <a
             href="https://monety.framer.website"
@@ -48,7 +45,7 @@ export const About = () => {
           >
             Monety
           </a>
-          , una aplicación que me ha permitido enfrentar desafíos reales de
+          , una aplicación móvil que me ha permitido enfrentar desafíos reales de
           arquitectura, mantenimiento, rendimiento e infraestructura.
         </p>
       </div>
