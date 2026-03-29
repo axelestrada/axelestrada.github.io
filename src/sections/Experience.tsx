@@ -6,19 +6,6 @@ import { HugeiconsIcon } from "@hugeicons/react";
 export const Experience = () => {
   const experiences = [
     {
-      id: 1,
-      role: "Desarrollador Full Stack",
-      company: "Ingeniería Digital",
-      url: "https://www.ingenieria.digital",
-      date: "Febrero 2026 - Actualidad",
-      description: [
-        "Desarrollo integral del proyecto Medicatel, una plataforma digital orientada a la adquisición y gestión de seguros médicos.",
-        "Implementación de frontend moderno y APIs backend para funcionalidades como búsqueda de médicos, cotización de seguros, gestión de citas médicas, exámenes y tratamientos.",
-        "Diseño de arquitectura escalable, modelado de base de datos y optimización de flujos críticos para garantizar rendimiento, seguridad y mantenibilidad del sistema.",
-        "Colaboración directa en decisiones técnicas y estratégicas para alinear el producto con los objetivos del negocio y la experiencia del usuario.",
-      ],
-    },
-    {
       id: 2,
       role: "Desarrollador Frontend",
       company: "Senprende",
