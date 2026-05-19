@@ -43,7 +43,7 @@ export const Profile = () => {
         Axel Estrada.
       </h1>
 
-      <p className="text-2xl font-medium mb-4">Desarrollador Full Stack</p>
+      <p className="text-2xl font-medium mb-4">Desarrollador Frontend</p>
 
       <div className="flex flex-row flex-wrap justify-center gap-2">
         <LinkItem
