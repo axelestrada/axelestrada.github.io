@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://axelestrada.github.io",
     siteName: "Axel Estrada",
     images: {
-      url: "https://axelestrada.github.io/images/axelestrada_preview.webp",
+      url: "https://axelestrada.github.io/images/portfolio-cover.webp",
       alt: "Axel Estrada",
       width: 1280,
       height: 640,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Portafolio de Axel Estrada: frontend moderno con experiencia integrando APIs, bases de datos y servicios backend para construir aplicaciones completas y escalables.",
     images: {
-      url: "https://axelestrada.github.io/images/axelestrada_preview.webp",
+      url: "https://axelestrada.github.io/images/portfolio-cover.webp",
       alt: "Axel Estrada",
       width: 1280,
       height: 640,
