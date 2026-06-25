@@ -25,10 +25,10 @@ export const Experience = () => {
       className="w-full pt-[20svh] px-3 md:px-8 max-w-4xl mx-auto"
     >
       <div className="relative mb-4">
-        <h2 className="text-2.5xl font-extrabold mb-2 text-center md:text-left md:text-accent">
+        <h2 className="text-2.5xl font-extrabold mb-2 text-center md:text-left">
           Mi trayectoria
         </h2>
-        <p className="text-foreground-65 text-lg text-center md:text-left font-light">
+        <p className="text-foreground-65 text-lg font-light">
           Aquí comparto parte de mi recorrido profesional y los proyectos que
           han marcado mi evolución como desarrollador. Si deseas conocer más
           detalles técnicos y responsabilidades específicas, puedes visitar mi

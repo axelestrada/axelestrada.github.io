@@ -6,11 +6,13 @@ export const About = () => {
       id="about"
       className="pt-[20svh] w-full min-h-svh md:min-h-full flex flex-col justify-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto md:flex-row md:items-center md:gap-8"
     >
-      <div className="md:w-2/3 text-center md:text-left">
+      <div className="md:w-2/3">
+        <div className="text-center md:text-left">
         <p className="text-pretext">Sobre mí</p>
         <h2 className="text-2.5xl font-extrabold mb-2">
           Construyendo productos completos
         </h2>
+        </div>
 
         <p className="text-foreground-65 text-lg font-light">
           Hola, soy <b className="text-accent font-semibold">Axel Estrada</b>,

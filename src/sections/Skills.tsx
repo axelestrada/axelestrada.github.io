@@ -138,11 +138,13 @@ export const Skills = () => {
       id="skills"
       className="pt-[20svh] w-full lg:min-h-full flex flex-col justify-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto lg:flex-row lg:items-center lg:gap-8"
     >
-      <div className="text-center md:text-left">
+      <div>
+        <div className="text-center md:text-left">
         <p className="text-pretext">Stack y herramientas</p>
         <h2 className="text-2.5xl font-extrabold mb-2">
           Mis habilidades técnicas
         </h2>
+        </div>
         <p className="text-foreground-65 text-lg font-light">
           Este es un resumen de mi stack como{" "}
           <strong className="text-accent font-semibold">

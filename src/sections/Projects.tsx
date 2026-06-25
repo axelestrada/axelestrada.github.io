@@ -22,10 +22,10 @@ export const Projects = () => {
       className="pt-[20svh] w-full min-h-svh flex flex-col justify-center items-center px-3 max-w-xl md:max-w-4xl md:px-8 mx-auto md:min-h-full"
     >
       <div className="relative mb-4">
-        <h2 className="text-2.5xl font-extrabold mb-2 text-center md:text-left md:text-accent">
+        <h2 className="text-2.5xl font-extrabold mb-2 text-center md:text-left">
           Mis proyectos
         </h2>
-        <p className="text-foreground-65 text-lg text-center md:text-left font-light">
+        <p className="text-foreground-65 text-lg font-light">
           Aquí encontrarás algunos de los proyectos que he desarrollado a lo
           largo de mi trayectoria como desarrollador. Si deseas explorar más, te
           invito a visitar mi perfil de{" "}
