@@ -60,7 +60,7 @@ export const Projects = () => {
           imageSrc="/images/mi-pulperia.webp"
           title="Mi Pulpería - Sistema de Punto de Venta"
           description="Aplicación de escritorio diseñada para la gestión integral de una pulpería o pequeño comercio. Incluye módulo de punto de venta (POS), control de inventario, gestión de clientes, sesiones de caja y reportes. Construida como solución offline-first con base de datos local y arquitectura modular."
-          linkToDemo="https://github.com/axelestrada/mi-pulperia-releases/releases/latest"
+          linkToDemo="https://mipulperia.axelestrada.site"
           techStack={[
             { icon: ReactIcon, title: "React" },
             { icon: Typescript01Icon, title: "TypeScript" },
