@@ -66,7 +66,6 @@ export const Profile = () => {
           label="axele1524@gmail.com"
           href="mailto:axele1524@gmail.com"
           leftIcon={Mail01Icon}
-          rightIcon={Copy01Icon}
           onClick={() => {
             navigator.clipboard.writeText("axele1524@gmail.com");
           }}
