@@ -3,7 +3,6 @@
 import {
   Alert01Icon,
   ArrowDown01Icon,
-  Copy01Icon,
   Download04Icon,
   Github01Icon,
   Linkedin01Icon,

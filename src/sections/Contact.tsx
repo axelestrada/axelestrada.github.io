@@ -5,7 +5,6 @@ import React from "react";
 import localFont from "next/font/local";
 import { LinkItem } from "./Profile";
 import {
-  Copy01Icon,
   Download04Icon,
   Mail01Icon,
 } from "@hugeicons/core-free-icons";
