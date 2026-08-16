@@ -45,11 +45,11 @@ export const Contact = () => {
           download
         />
         <LinkItem
-          label="axele1524@gmail.com"
-          href="mailto:axele1524@gmail.com"
+          label="axelestradahn@gmail.com"
+          href="mailto:axelestradahn@gmail.com"
           leftIcon={Mail01Icon}
           onClick={() => {
-            navigator.clipboard.writeText("axele1524@gmail.com");
+            navigator.clipboard.writeText("axelestradahn@gmail.com");
           }}
         />
       </div>
