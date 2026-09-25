@@ -40,7 +40,7 @@ export const Contact = () => {
         <LinkItem
           label="Descargar CV"
           leftIcon={Download04Icon}
-          href="/cv/AxelEstrada-CV.pdf"
+          href="/cv/Axel_Estrada_CV.pdf"
           download
         />
         <LinkItem
